@@ -1,0 +1,98 @@
+// External link (endpoints api)
+const BASE_URL_API = process.env.NEXT_PUBLIC_API_URL;
+const WEB_DOMAIN = process.env.WEB_URL;
+const Endpoints = {
+  BASE_URL: BASE_URL_API,
+  WEB_DOMAIN: WEB_DOMAIN,
+  AUTH: {
+    CHECK_ACCOUNT: BASE_URL_API + "/auth/check-account",
+    SIGN_UP: BASE_URL_API + "/auth/sign/up",
+    LOG_IN: BASE_URL_API + "/auth/sign-in",
+    REFRESH_TOKEN: BASE_URL_API + "/api/v1/token/renew",
+    CHANGE_PASSWORD: BASE_URL_API + "/user/update-config",
+  },
+  DASHBOARD: {
+    MIXER: BASE_URL_API + "/mixer",
+    MIXER_HISTORY: BASE_URL_API + "/mixer/status-history",
+    BATCH_RESULT: BASE_URL_API + "/batch-results",
+    BATCH_RESULT_UNCERTAIN: BASE_URL_API + "/batch-results/uncertain",
+    IOPE: BASE_URL_API + "/ope/percent",
+    OPE_HISTORY: BASE_URL_API + "/ope/history",
+    IOR: BASE_URL_API + "/ope/or-percent",
+    OR_HISTORY: BASE_URL_API + "/ope/or-history",
+    TOP_LOSS_CURRENT_SHIFT: BASE_URL_API + "/ope/get-loss-active-batch",
+    TOP_LOSS_THIS_SHIFT: BASE_URL_API + "/ope/get-loss-active-shift",
+    TOP_LOSS_LAST_SHIFT: BASE_URL_API + "/ope/get-loss-previous-shift",
+    BATCH_EFFICIENCY: BASE_URL_API + "/batch-efficiency",
+    MIXER_STATUS_FILTER: BASE_URL_API + "/ope/mixer-status-filter",
+    MIXER_STATUS: BASE_URL_API + "/ope/mixer-status",
+  },
+  MANAGEMENT: {
+    BCTLOST_BY_MIXER: BASE_URL_API + "/ope/mixer-loss-bct",
+    BCTLOST_BY_CUC: BASE_URL_API + "/ope/cuc-code-loss-bct",
+    BCTLOST_BY_BATCH: BASE_URL_API + "/ope/step-loss-bct",
+    BCTLOST_BY_SHIFT: BASE_URL_API + "/ope/shift-loss-bct",
+    BCTSTEP_LOSS_BY_SHIFT: BASE_URL_API + "/ope/step-loss-by-shift",
+  },
+  PUMP: {
+    START_PUMP: BASE_URL_API + "/pump/change-status-pump",
+    STATUS_PUMP: BASE_URL_API + "/pump/pump-status/",
+  },
+  HISTORY: { BATCH_LIST: BASE_URL_API + "/batch/list", BATCH: BASE_URL_API + "/batch" },
+  CATEGORY_MANAGEMENT: {
+    MIXER: BASE_URL_API + "/mixer",
+    CATEGORY: BASE_URL_API + "/category",
+    MIXER_CATEGORY_LIST: BASE_URL_API + "/mixer-category",
+    PH: BASE_URL_API + "/input-ph",
+  },
+  EXCEL: {
+    MIXER_CAT_INPUT: BASE_URL_API + "/excel/mixer-cat-input",
+    PRODUCT_CODE_INPUT: BASE_URL_API + "/excel/product-code-input",
+    MIXER_WEIGHT: BASE_URL_API + "/excel/mixer-weight",
+    MIXER_WEIGHT_TEMPLATE: BASE_URL_API + "/excel/mixer-weight-template",
+    MIXER: BASE_URL_API + "/excel/mixer",
+    INPUT: BASE_URL_API + "/excel/input",
+    INPUT_PH: BASE_URL_API + "/excel/input-ph",
+    CATEGORY: BASE_URL_API + "/excel/category",
+    LOST_BCT: BASE_URL_API + "/excel/loss-bct-standard-import",
+    STANDARD_OPE_DATA: BASE_URL_API + "/excel/standard-ope-data",
+    SAFEZONE_DATA: BASE_URL_API + "/excel/safezone-data",
+    STEP_NAME_DATA: BASE_URL_API + "/excel/step-name-data",
+    LOST_BCT_STANDARD_DATA: BASE_URL_API + "/excel/loss-bct-standard-export",
+    CUC_CODE_SCHEDULE: BASE_URL_API + "/excel/schedule-cuccode",
+    EXPORT_BATCH_PREDICT: BASE_URL_API + "/excel/batch-predict",
+    LOSS_LOG: BASE_URL_API + "/loss-log/get-log-excel",
+    EXPORT_DATA_OPE_CONVERTED: BASE_URL_API + "/excel/data-ope-converted",
+  },
+  STATISTICAL: {
+    PULL_DATA_ADX: BASE_URL_API + "/pull-logs/adx",
+  },
+  TRAIN_MODEL: {
+    HISTORY_LOG: BASE_URL_API + "/pull-logs/train",
+  },
+  OPE_DASHBOARD: {
+    BASE: BASE_URL_API + "/ope/filter",
+    LOSS_BCT_INTERNAL: BASE_URL_API + "/ope/loss-bct-internal",
+    LOSS_BCT_EXTERNAL: BASE_URL_API + "/ope/loss-external",
+    OPE_STEP_MIXER_DATE: BASE_URL_API + "/ope/get-step-mixer",
+    OPE_STEP_MIXER_WEEK: BASE_URL_API + "/ope/get-step-mixer-week",
+    OPE_STEP_MIXER_AVERAGE: BASE_URL_API + "/ope/get-step-mixer-average",
+  },
+  LOSS_MANAGEMENT: {
+    AREA: BASE_URL_API + "/loss-log/area",
+    REASON_LOSS: BASE_URL_API + "/loss-log/reason",
+    MIXER_LOSS: BASE_URL_API + "/loss-log/mixer-loss",
+    LOSS_LOG: BASE_URL_API + "/loss-log/get-log",
+    CREATE_LOSS: BASE_URL_API + "/loss-log/create-log",
+    CREATE_MIXER_LOSS: BASE_URL_API + "/loss-log/create-mixer-log",
+  },
+  STATUS_CUC: {
+    BASE: BASE_URL_API + "/cuc-schedule",
+    GET_CUC_SCHEDULE: BASE_URL_API + "/cuc-schedule",
+    DELETE_CUC_SCHEDULE: BASE_URL_API + "/cuc-schedule",
+    POST_IMPORT_CUC_SCHEDULE: BASE_URL_API + "/cuc-schedule",
+    POST_IMPORT_MIXER_WEIGHT: BASE_URL_API + "/ope/mixer-weight",
+  },
+};
+
+export default Endpoints;

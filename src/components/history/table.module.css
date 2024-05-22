@@ -1,0 +1,10 @@
+.odd {
+  background-color: #f2f2f2;
+}
+.even {
+  background-color: #ffffff;
+}
+
+.ant-table-cell {
+  padding: 2 !important;
+}
