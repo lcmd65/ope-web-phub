@@ -126,11 +126,6 @@ Built-in feature from Next.js:
 
 - Get a free API_URL at [https://example.com](https://example.com)
 
-- Clone the repo
-
-  ```sh
-  git clone https://github.com/QuocEran/Next.js-Tailwind-Sample.git
-  ```
 
 - Install packages
 
@@ -323,15 +318,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 
-## Contact
-
-Quoc Erab - [@chuong.tranquoc](https://www.facebook.com/chuong.tranquoc) - quocchuong45@gmail.com
-
-Project Link: [https://github.com/QuocEran/Next.js-Tailwind-Sample](https://github.com/QuocEran/Next.js-Tailwind-Sample)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
 
