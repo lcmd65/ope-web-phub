@@ -34,10 +34,6 @@
 
 ## About The Project
 
-<div align="center">
-  <img src="public/images/png/screenshot.png" alt="screenshot" style="object-fit: contain; width:100%;"/>
-</div>
-
 🚀 Simple templete with base configurations written in Next.js, Tailwind CSS and TypeScript.
 
 ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Zustand, VSCode, Docker, Tailwind CSS, HeadlessUI.
