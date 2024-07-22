@@ -1,28 +1,4 @@
 <a name="readme-top"></a>
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/QuocEran/Next.js-Tailwind-Sample">
-    <img src="public/images/png/next_tailwind.png" alt="Logo"  width="246" height="70">
-  </a>
-
-  <h3 align="center">Next.js + Tailwind + Typescript sample</h3>
-
-  <p align="center">
-    Next.js with Tailwind CSS sample template to jumpstart any project!
-    <br />
-    <a href="https://github.com/QuocEran/Next.js-Tailwind-Sample#readme"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/QuocEran/Next.js-Tailwind-Sample">View Demo</a>
-    ·
-    <a href="https://github.com/QuocEran/Next.js-Tailwind-Sample/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/QuocEran/Next.js-Tailwind-Sample/issues">Request Feature</a>
-  </p>
-</div>
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
